@@ -18,7 +18,7 @@ dotenv.config({
       : "./src/config/.env.development",
 });
 
-const PORT = process.env.PORT || 9090;
+const PORT = process.env.PORT || 5050;
 
 export default {
   port: PORT,
