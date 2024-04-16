@@ -38,7 +38,7 @@ import logger from "./utils/logger.js";
 
 //Server
 const app = express();
-const PORT = PORT || config.port;
+const PORT = config.port;
 const httpServer = app.listen(PORT, () => {
   `Server listening on port ${PORT}`;
 });

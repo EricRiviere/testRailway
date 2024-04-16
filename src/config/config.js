@@ -18,8 +18,10 @@ dotenv.config({
       : "./src/config/.env.development",
 });
 
+const PORT = process.env.PORT || 9090;
+
 export default {
-  port: process.env.PORT,
+  port: PORT,
   mongoUrl: process.env.MONGO_URL,
   enviroment: program.opts().mode,
   clientID: process.env.GITHUB_CLIENT_ID,
